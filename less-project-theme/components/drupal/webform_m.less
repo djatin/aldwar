@@ -1,0 +1,106 @@
+// out: null
+// Media Queries for component
+
+/* !webforms --------------------------------------------------- */
+// Styles for DRUPAL WEBFORMS
+/* clases
+.form (gerneric all forms)
+.webform-client-form (the form)
+.form__wrapper
+
+basic mark up
+- <div .webform-component
+--- label
+----- input (form-text, form-textarea, form-select, form-email)
+- </div>
+*/
+
+/*types
+-markup (area code)
+-select
+-textfield
+-number (same as textfield)
+-textarea
+-checkboxes
+-radio
+-permission (text area)
+-date
+*/
+
+// make it all inputs, selects, textareas responsive 100%
+.form-text, .form-select, .form-textarea {
+    .min-width(0.0625em {
+        width: 100%;
+    });
+}
+
+// make these infield top aligned 
+//http://uxmovement.com/forms/why-infield-top-aligned-form-labels-are-quickest-to-scan/
+//only for browsers that can cope with this so from 320px up 
+@small_major: 18.5em; //300px as we still waht opera mini to work
+.min-width(@small_major {
+
+//All -60px height bounding box
+.webform-component {
+    padding: 0.375em 0.625em; //6px 10px 
+    min-height: 4.5em; //72px;
+    border : 3px @inputborderstyle @inputborder;
+    .rounded(0.25em);
+    background: @inputbackground;
+    &:hover {
+        border-color: @inputborder--hover;
+    }
+}
+
+// remove borders 
+.webform-component .form-text, .webform-component .form-textarea, .webform-component .form-select {
+    //border: 0;
+    border-color: @inputbackground;
+}
+
+//alternative setups div becomes the input - select, radios, check boxes, date, etc
+// We are going to tidy this up more
+.webform-component-date .form-item {
+    display: inline-block;
+    margin: 0 0.5em 0 0;
+    min-width: 4.5em; 
+    .one-quarter();
+}
+
+//end @small_major
+});
+
+
+.d-section--cv-form{
+    form{
+        //.clearfix();   
+        max-width: 49.375em;
+        margin: 1.5em auto 0;
+        .webform-component--name{
+            .visually-hidden();
+        }
+        .form-item{
+            border-radius: 0;
+            .min-width(60em{
+                float: left;
+                margin: 0 1em 0 0;
+                border: none;
+                outline: none;
+            });
+        }
+        &:after{
+            .clear-both();
+        }
+        .webform-component-file{
+            max-width: 15.0625em;
+            overflow: hidden;
+            background: transparent;
+            border: 1px solid #6d6d6d;
+        }
+        .form-submit{
+            background: #769a8b;
+            border-color: #769a8b;
+            border-radius: 0;
+        }
+    }
+}

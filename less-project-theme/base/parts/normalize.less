@@ -1,0 +1,171 @@
+// out: null
+///*! normalize.css v3.0.2 | MIT License | git.io/normalize 
+//  Tweaked by BM's Sacha harmsworth
+//*/
+
+/**
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/* Images
+   ========================================================================== */
+img { -ms-interpolation-mode: bicubic; }
+
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* 	=========================================================================
+	boxsizing 
+	========================================================================== */
+
+/* Using Paul Irish's recomendation for all projects IE+
+http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+apply a natural box layout model to all elements, but allowing components to change */
+*, *:before, *:after {
+  .box-sizing(border-box);
+}
+
+/* 	=========================================================================
+	Baseline flow
+	========================================================================== */
+    
+/* uses Heydon Pickering's
+http://alistapart.com/article/axiomatic-css-and-lobotomized-owls 
+body *+* {
+    margin-top: @baselineunit;
+}*/
+
+/* 	=========================================================================
+	drupal resets 
+	========================================================================== */
+// that little spining clock
+.ajax-progress-throbber, .views-throbbing, span.views-throbbing { display: none}
+
+

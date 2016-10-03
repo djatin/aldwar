@@ -1,0 +1,131 @@
+// out: null
+
+// global styles 
+/* !Sections --------------------------------------------------- 
+    Core styles for the d-sections
+*/
+
+/* clases
+
+.d-section (basic drupal section)
+
+//modififers 
+.d-section--alignment-none (image above text default)
+.d-section--alignment-center(image on top with text centered)
+.d-section--alignment-left (media floated left)
+.d-section--alignment-right (media floated right)
+
+
+// Project specific modifiers 
+// these change from project to project and accect elemnts in the block
+.d-section--style-1 (normally a background color)
+.d-section--style-2 (normally a background color)
+*/
+
+.d-section--alignment-center {
+    text-align: center;   
+}
+
+
+
+// Component in situ 
+
+//Project specific components ---------------------------------
+
+// White
+.d-section--style-1 {
+    background-color: @highlight--color-1;
+}
+
+// Green
+.d-section--style-2 {
+    background-color: @highlight--color-2;
+    color: @highlight--color-3; // Brown
+    .title{
+        font-size: 2.625em;
+        color: #6d6d6d;
+        font-family: @font-stack__adamina__serif !important;
+        letter-spacing: normal !important;
+        text-transform: none;
+    }
+    p{
+        font-size: 1.5em;
+        margin-top: .625em;
+    }
+}
+
+// Brown
+.d-section--style-3 {
+    background-color: @highlight--color-3;
+    color: @white;
+}
+
+// Beige
+.d-section--style-4 {
+    background-color: @highlight--color-4;
+}
+
+// Dark green
+.d-section--style-5 {
+    background-color: @highlight--color-5;
+    color: @white;
+}
+
+// Grey
+.d-section--style-6 {
+    background-color: @highlight--color-6;
+    color: @white;
+}
+
+// Typography 
+.d-section--style-banner .title, .d-section--style-text .title {
+    margin-top: 0;
+    font-family: @font-stack__sans;
+    font-weight: normal;
+    letter-spacing: 10px;
+}
+
+.d-section--style-banner .subtitle, .d-section--style-text .subtitle {
+    //font-family: 'Open Sans',sans-serif;
+    //font-weight: 100;
+    letter-spacing: .5em;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: white;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    display: inline-block;
+    padding: 1em 0 1em;
+    margin-top: 0;
+}
+.d-section--style-text .subtitle{letter-spacing: normal;
+    max-width: 11em;
+    text-transform: none;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    display: inline-block;
+    padding: 1em 0 1em;
+    margin-top: 0;
+    font-size: 1.25em;
+    &:after{
+        display: block;
+        content: "";
+        margin: .75em auto 0;
+        width: 2.5em;
+        height: 1.25em;
+    }
+}
+.d-section--style-text .subtitle {
+    &:after{
+        background: url(../img/down_arrow_white.png) no-repeat center;
+    }
+}
+.d-section--cv-form{
+    background: #ece8df;
+    .subtitle{
+        color: #828180;
+        &:after{
+            background: url(../img/down_arrow.png) no-repeat center;
+        }
+    }
+}

@@ -1,0 +1,176 @@
+// out: null
+
+// global styles 
+
+/* !Search form --------------------------------------------------- */
+
+/*
+.search (wrapping div)
+.search-form (the form element)
+.search__search-form (search form in the search module div as it may be used else where who know what drupal does with these!)
+.search-form__fieldset (the fieldset wrapper)
+.form-item (drupal wrapper for form elements)
+.form-type-textfield (the type of form-item)
+.form-actions (the submit wrapper)
+.form-submit (the submit btn)
+
+// modifiers 
+.search--navigation (search in the navigation normally the utility navigation)
+.search--page (search form in the page)
+*/
+
+
+.search__wrapper {
+    padding: 0.375em; //6px to make it round 
+}
+
+.search__title {
+    .visually-hidden();
+}
+
+
+.search-form { // the search-form
+        margin: 0;
+        padding: 0;
+        position: relative;
+        .rounded(0);
+        border: 0;
+        background: none;
+}
+
+
+.search-form__fieldset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+}
+
+// hidden legend bug 
+legend.u-visually-hidden {
+        width: 1px;   
+}
+
+
+.search-form .form-type-textfield  { // the textfield and label holder
+        margin: 0;
+    }
+
+.search-form label  {
+    display: block;
+    margin: 0;
+    padding-left: 4px;
+    padding-left: 0.25rem;
+    .zeta ();
+    text-transform: uppercase;
+    .letterspacing60();
+}
+
+
+.search-form input { // generic styles for the form inputs
+    padding: 11px 4px; 
+    padding: 0.6875rem 0.25rem; 
+    //height: 44px;
+    //height: 2.75rem;
+    
+}
+
+.search-form .form-text {
+        border: 0;
+        border-bottom: 1px solid @grey--light-2;
+        background: @white;
+        font-size: 1em;
+        line-height: 1.375em;
+        color: @grey;
+        .rounded(0);
+        &:active, &:focus {
+        border-bottom-color: @basecolor;
+        }
+        
+        .lt-ie8 & {
+            border: 1px solid @grey;
+        }
+    }
+
+.search-form .form-submit {
+    padding: 0 0.75em;
+    height: 44px;
+    height: 2.75rem;
+    border: 0;
+        //.rounded(2px); 
+        &:hover, &:active, &:focus {
+
+
+        }
+    }
+
+
+
+// !Search--navigation ----------------------
+
+.search--navigation {
+      margin-top: 1.5em; 
+}
+
+// !Search--page ----------------------------
+
+//.search--page  {
+
+//}
+
+// Re-write drupal search page
+.search-results {
+    max-width: 33em;
+}
+
+.search-results__title {
+    .gamma--margin ();
+    text-transform: uppercase;
+}
+
+.search-results ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.search-results li {  
+        padding-bottom: 0.75em;
+        border-bottom: 1px solid @grey--light-2;
+        &:last-child {
+            border-bottom: 0;
+        }
+}
+
+.search-performance {
+    display: none;   
+}
+// spelling suggesstions
+//.search-info
+.spelling-suggestions {
+    margin: 0 0 0.75em;
+}
+
+.did-you-mean {
+        padding-right: 0.375em;
+}
+
+.placeholder, .search-snippet strong {
+    color: @warningcolor;
+}
+
+
+.search-result__title {
+    .delta--margin ();  
+    text-transform: uppercase;
+}
+
+//no results displayed in a ul
+.search-results--no-result ul li {
+      margin: 0.5em 0;   
+}
+ 
+.search-results--no-result li em {
+          max-width: 15.5em;
+          padding: 0 0.25em;
+          color: @basecolor;
+          white-space:nowrap;
+}
