@@ -86,11 +86,26 @@
     
     .d-section--style-banner, .o-splash {
         //height: 40em; // must match image
-        height: 25em; // must match image
+        height: 29.25em; // must match image
     // cut off the banner here
         overflow: hidden;
     }
-    
+    .d-section--height-tall{
+        height: 41.125em;
+        .o-splash{
+            height: 41.125em;
+        }
+    }
+    .d-section--height-short{
+        height: 29.25em;
+        .o-splash{
+            height: 29.25em;
+        }
+    }
+    .d-section--style-feed.d-section--height-tall, 
+    .d-section--style-feed.d-section--height-short{
+        height: auto;
+    } 
     .o-splash  {
         //layout using display table 
         display: table;
@@ -104,7 +119,7 @@
     .o-splash__anchor {
         // height needs to be set to the aspect ratio fo the banner image
         // currently
-        height: 40em;
+        height: 100%;
         position: absolute;
         top: 0;
         left: 0;
@@ -134,11 +149,11 @@
     
     //.splash-anchor--center
     .csstransforms .anchor--center img {
-        left: 50%;
+       // left: 50%;
     //-webkit-transform: translate(-50%,0);
      // -ms-transform: translate(-50%,0);
       //    transform: translate(-50%,0);
-        .translate(@x: -50%, @y: 0);
+        //.translate(@x: -50%, @y: 0);
     }
         
     .o-splash__wrapper {
@@ -155,11 +170,9 @@
     .o-splash__anchor img {
         // reset the image so height is 100% and width is auto
         width: auto;
-        max-width: none;  
+        //max-width: none;  
         height: 100%;
     }
-    
-    
     
 });
 
@@ -184,10 +197,14 @@
             display: block;
             content:"";
             margin: 0.75em auto 0;
-            width: 2.25em; //36px;
-            height: 2.25em; //36px;
-            background: transparent url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20xmlns%3Aa%3D%22http%3A//ns.adobe.com/AdobeSVGViewerExtensions/3.0/%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%20overflow%3D%22visible%22%20enable-background%3D%22new%200%200%2048%2048%22%20xml%3Aspace%3D%22preserve%22%3E%3Crect%20x%3D%2246.875%22%20y%3D%2246.875%22%20fill%3D%22none%22%20width%3D%22156.25%22%20height%3D%22156.25%22/%3E%3Cpolygon%20fill%3D%22%23A4A4A4%22%20points%3D%2224%2C35.655%2042%2C17.655%2036.69%2C12.345%2024%2C25.05%2011.31%2C12.345%206%2C17.655%20%22/%3E%3Ccircle%20display%3D%22none%22%20fill%3D%22%235A5A5A%22%20cx%3D%22125%22%20cy%3D%22125%22%20r%3D%22125%22/%3E%3C/svg%3E%0D%0A') center center no-repeat;
-            background-size: 3em 3em;
+            width: 2.5em; //36px;
+            height: 2.1em; //36px;
+            /*background: transparent url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20xmlns%3Aa%3D%22http%3A//ns.adobe.com/AdobeSVGViewerExtensions/3.0/%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%20overflow%3D%22visible%22%20enable-background%3D%22new%200%200%2048%2048%22%20xml%3Aspace%3D%22preserve%22%3E%3Crect%20x%3D%2246.875%22%20y%3D%2246.875%22%20fill%3D%22none%22%20width%3D%22156.25%22%20height%3D%22156.25%22/%3E%3Cpolygon%20fill%3D%22%23A4A4A4%22%20points%3D%2224%2C35.655%2042%2C17.655%2036.69%2C12.345%2024%2C25.05%2011.31%2C12.345%206%2C17.655%20%22/%3E%3Ccircle%20display%3D%22none%22%20fill%3D%22%235A5A5A%22%20cx%3D%22125%22%20cy%3D%22125%22%20r%3D%22125%22/%3E%3C/svg%3E%0D%0A') center center no-repeat;
+            background-size: 3em 3em;*/
+            position: absolute;
+            left: 48.5%;
+            bottom: 1em;
+            background: url(../img/down_arrow_white.png) no-repeat center;
         }
     });
 }

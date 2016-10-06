@@ -130,7 +130,6 @@ cite {
     max-width: 54em;
     //text-transform: uppercase;
 }
-
 .quote__logo {
     max-width: 7.75em;  //124px; 
 }
@@ -238,4 +237,36 @@ cite {
 
 .vcard .tel, .vcard .email {
     margin: 0;
+}
+.d-section--style-banner{
+    .quote{
+        max-width: 25em;
+        margin-left: auto;
+        margin-top: 0;
+        blockquote{
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 2em;
+            padding-right: .4em;
+            text-align: right;
+            &:before{
+                text-align: left;
+                left: 0.5em;
+            }
+            &:after {
+                content:"\201D"; // double quote   
+                display: block;
+                margin-right: -0.55em;
+                line-height: 1;
+                font-weight: 700;
+                position: relative;
+                bottom: 2.37em;
+            }
+        }
+        figcaption{
+            text-transform: none;
+            text-align: right;
+            font-size: .875em;
+        }
+    }
 }

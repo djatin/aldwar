@@ -43,7 +43,7 @@ basic mark up
 //All -60px height bounding box
 .webform-component {
     padding: 0.375em 0.625em; //6px 10px 
-    min-height: 4.5em; //72px;
+   // min-height: 4.5em; //72px;
     border : 3px @inputborderstyle @inputborder;
     .rounded(0.25em);
     background: @inputbackground;
@@ -71,7 +71,7 @@ basic mark up
 });
 
 
-.d-section--cv-form{
+.d-section--style-4{
     form{
         //.clearfix();   
         max-width: 49.375em;
@@ -81,26 +81,61 @@ basic mark up
         }
         .form-item{
             border-radius: 0;
+            position: relative;
             .min-width(60em{
                 float: left;
                 margin: 0 1em 0 0;
                 border: none;
                 outline: none;
+                max-width: 26em;
+                padding: .108em .5em;
             });
+            input[type='text'],
+            input[type='email']{
+                font-size: 1.0625em;
+            }
         }
         &:after{
             .clear-both();
+        }
+        .webform-component-email label{
+            position: absolute;
+            top: .75em;
+            left: 1.0625em;
+            font-size: 1.0625em;
+            display: block;
+        }
+        .active_email_field label{
+            display: none;
         }
         .webform-component-file{
             max-width: 15.0625em;
             overflow: hidden;
             background: transparent;
-            border: 1px solid #6d6d6d;
+            padding: 0;
+            //border: 1px solid #6d6d6d;
+            label, .description, input[type='file']{
+                display: none;
+            }
+            input[type='submit']{
+                pointer-events: none;
+            }
+            &.active_file{
+                border: 1px solid #6d6d6d;
+                padding: .5em;
+                label, .description, input[type='file']{
+                    display: block;
+                }
+                input[type='submit']{
+                    pointer-events: all;
+                }    
+            }
         }
         .form-submit{
             background: #769a8b;
             border-color: #769a8b;
             border-radius: 0;
+            margin: 0;
         }
     }
 }

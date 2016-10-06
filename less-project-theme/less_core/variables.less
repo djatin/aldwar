@@ -10,9 +10,10 @@
 // 2. TYPOGRAPHY 			==============================
 // Font Stack add a font stack (if you want to fallback to something more intesting than aerial or helvetia
 @fall-back--sans-serif: sans-serif;
-@fall-back--serif: serif;
+@fall-back--serif: 'Georgia', serif;
 
 @font-stack__lato__sans: 'Lato', @fall-back--sans-serif;
+@font-stack__agency__sans: 'Agency_FB', @fall-back--sans-serif;
 @font-stack__josefin__sans: 'Josefin Sans', @fall-back--sans-serif;
 @font-stack__adamina__serif: 'Adamina', @fall-back--serif;
 
@@ -35,15 +36,18 @@
 
 //@emergencybg : rgb(247, 105, 105); //#f76969
 @twitterbg : rgb(0,158,239); //#009eef 
-@footerbg : @grey--dark-4; //#2a2a2a
+@footerbg : @highlight--color-3; //#9a6f67
 @footertextcolor : @grey--light-1;
 
 @highlight--color-1 : rgb(255, 255, 255);  // #ffffff white
-@highlight--color-2 : rgb(199, 231, 218); // #c7e7da green
-@highlight--color-3 : rgb(154, 111, 104); // #9a6f68 brown
-@highlight--color-4 : rgb(236, 232, 223); // #9a6f68 beige
+@highlight--color-2 : rgb(200, 231, 218); // #c8e7da green
+@highlight--color-3 : rgb(154, 111, 103); // #9a6f67 brown
+@highlight--color-4 : rgb(154, 111, 104); // #9a6f68 brown
 @highlight--color-5 : rgb(118, 155, 138); // #769b8a dark green
 @highlight--color-6 : rgb(88, 88, 88);    // #585858 grey
+@highlight--color-7 : rgb(109, 109, 109);    // #6d6d6d 
+@highlight--color-8 : rgb(158, 158, 157);    // #9e9e9d 
+@highlight--color-9 : rgb(236, 232, 223); // #ece8df beige
 
 // greyscale
 @white : rgb(255,255,255); //#ffffff
@@ -53,6 +57,7 @@
 @grey--light-2: #a4a4a4; //#a4a4a4;
 @grey--light-3: #7a8683; //#7a8683;
 @grey--light-4: #807f7b; //#807f7b;
+@grey--light-5: #787776; //#787776;
 @grey: rgb(86,86,86); // text grey #565656
 @grey--dark-1: rgb(108,109,112); //#6c6d70
 @grey--dark-2: rgb(93,94,97); //#5d5e61
@@ -78,6 +83,9 @@
 
 //Buttons
 @btnbackgroundcolor: @btnColor;
+
+//Border widths
+@normalBorderWidth: 1px;
 
 // tables 
 

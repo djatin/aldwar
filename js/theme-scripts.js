@@ -387,7 +387,21 @@ function showHideTakeover () {
       
           // end non-mustardo
       }
-    
+		
+		jQuery('.webform-component-file:not(.bound)').addClass('bound').click(function(){
+			$(this).addClass('active_file');
+		});
+		
+		jQuery('.d-section--style-4 .webform-component-email:not(.bound)').addClass('bound').click(function(){
+			$(this).addClass('active_email_field');
+		});
+		jQuery('.d-section--style-4 .webform-component-email.bound').focusout(function(){
+			tmval = $(this).find('.email').val();
+			if(tmval == ''){
+				$(this).removeClass('active_email_field');
+			}
+		});
+	
       // END DRUPAL THEME SCRIPTS
     }
   };
