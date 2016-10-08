@@ -123,14 +123,6 @@
         height: 1.25em;
     }
 }
-.d-section--style-text .subtitle {
-    &:after{
-        background: url(../img/down_arrow_white.png) no-repeat center;
-        bottom: 1em;
-        left: 47%;
-        position: absolute;
-    }
-}
 .d-section--style-1{
     .title{
         font-size: 2.655625em;
@@ -150,16 +142,18 @@
     }
 }
 .d-section--style-4{
-    .title{
-        color: @grey--light-5;
-    }
-    .subtitle{
+    .hgroup{
         position: relative;
-        color: #828180;
-        &:after{
-            bottom: -1em;
-            left: 38%;
-            background: url(../img/down_arrow.png) no-repeat center;
+        .title{
+            color: @grey--light-5;
+        }
+        .subtitle{
+            color: #828180;
+            &:after{
+                bottom: 0;
+                left: 46.5%;
+                background: url(../img/down_arrow.png) no-repeat center;
+            }
         }
     }
 }

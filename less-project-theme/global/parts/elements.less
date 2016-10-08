@@ -249,6 +249,9 @@ cite {
             font-size: 2em;
             padding-right: .4em;
             text-align: right;
+            .min-width-max(.1em{
+                text-align: left;
+            }39.99em);
             &:before{
                 text-align: left;
                 left: 0.5em;
@@ -260,7 +263,10 @@ cite {
                 line-height: 1;
                 font-weight: 700;
                 position: relative;
-                bottom: 2.37em;
+                bottom: 1.3em;
+                .min-width-max(.1em{
+                    display: none;
+                }39.99em);
             }
         }
         figcaption{
@@ -268,5 +274,18 @@ cite {
             text-align: right;
             font-size: .875em;
         }
+        .min-width-max(.1em{
+            max-width: 100%;
+            figcaption{            
+                text-align: center;
+            }
+        }39.99em);
     }
 }
+.min-width-max(.1em{
+    .d-section--style-6{
+        .o-btn{
+            text-align: center;
+        }
+    }
+}39.99em);

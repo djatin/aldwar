@@ -25,6 +25,7 @@
     // 640px/40em
 	.min-width(40em; {
         width: 50%;
+        max-width: 50%;
         float: left;
     });
     // 960px/60em
@@ -226,12 +227,18 @@
 }
 .d-feed--style-3 {
     .o-tile {
+        -ms-flex: 1 0 100% !important;
+        -webkit-flex: 1 0 100% !important;
         flex: 1 0 100% !important;
+        max-width: 100%;
         flex-direction: row;
         display: block;
         text-align: left;
         clear: both;
         margin-bottom: .25em;
+        .min-width-max(40em{
+            margin-bottom: 1.5em;
+        }69em);
         .o-tile__item {
             .min-width(40em{
                 width: 25.25em;
@@ -241,15 +248,21 @@
         }
         .o-tile__body{
             border: none;
-            .min-width(40em{
+            .min-width(75em{
                 padding: 1.5em 5em;
             });
+            .min-width-max(40em{
+                padding: 0 1em;
+            }74.99em);
             .o-tile__title{
                 margin-top: 0;
                 font-weight: normal;
                 text-transform: none;
                 font-size: 1.755625em;
                 text-transform: uppercase;
+                .min-width-max(.1em{
+                    text-align: center;
+                }39.99em);
                 a{
                     text-decoration: none;
                     color: @highlight--color-7;
@@ -261,6 +274,9 @@
                 font-weight: bold;
                 font-style: normal;
                 margin-top: 0;
+                .min-width-max(.1em{
+                    text-align: center;
+                }39.99em);
             }
             .o-tile__text {
                 max-width: 100%;
@@ -279,7 +295,17 @@
                 width: 100%;
                 max-width: 70%;
             });
+            .min-width-max(.1em{
+                padding: 0 1.5em;
+                text-align: center;
+                a{
+                    margin: 0 0 1.25em;
+                }
+            }39.99em);
         }
+        .min-width-max(.1em{
+            margin-bottom: 1.25em;
+        }39.99em);
     }
 }
 .d-feed--style-7{
@@ -327,7 +353,7 @@
     .o-tile{
         border-style: solid;
         border-color: @white;
-        border-width: 3px 1px 3px 0;
+        border-width: 0 1px 0 0;
         &:first-child{
             background: @highlight--color-6;
             .o-tile__title{

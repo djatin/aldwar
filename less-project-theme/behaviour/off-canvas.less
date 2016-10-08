@@ -34,7 +34,7 @@
     }
     
     .mustardo-nav-toggle {
-        background-image: url(../../common/img/global/off-canvas/off-canvas-icon--menu.png);
+        background-image: url(../img/off-canvas-icon--menu.png);
         background-position: center center;
         background-repeat: no-repeat;
         &:hover, &:active, &:focus {
@@ -50,18 +50,18 @@
         position: absolute;
         top: 0;
         right: 0;
-        background-image: url(../../common/img/global/off-canvas/off-canvas-icon--close.png);
+        background-image: url(../img/off-canvas-icon--close.png);
     }
 
     .svg .mustardo-nav-toggle--menu {
         // uggg http: requst for close icon as SVG data url has a bad performance hit in mobiles
-        background-image: url(../../common/img/global/off-canvas/off-canvas-svg--menu.svg);
+        background-image: url(../img/off-canvas-svg--menu.svg);
         background-size: 3em 3em;
     }
     
     .svg .mustardo-nav-toggle--close {
         // uggg http: requst for close icon as SVG data url has a bad performance hit in mobiles
-        background-image: url(../../common/img/global/off-canvas/off-canvas-svg--close.svg);
+        background-image: url(../img/off-canvas-svg--close.svg);
         background-size: 3em 3em;
     }
     
@@ -73,7 +73,8 @@
         margin: 0;
         width:16.5em; //264px
         min-height: 100%;
-        background: @whiteonblack;
+        //background: @whiteonblack;
+        background: @basecolor;
         border-left: 1px solid darken(@whiteonblack, 5%);
         overflow: hidden;
         position: absolute;
@@ -86,7 +87,9 @@
     
     .mustardo-navigation .navigation__wrapper {
         padding: 4.625em 0;
-        
+        .menu li a{
+            padding: .4125em .825em;
+        }
     }
     
     // Shift the page 
@@ -128,7 +131,7 @@
     }
     // Shift nav to accomedate search
     .mustardo-navigation .navigation__global-nav {   
-            margin-top: 3.75em; //60px
+        //margin-top: 3.75em; //60px
     }
     
    
