@@ -12,17 +12,20 @@
 .contentinfo {
     //margin-top: 3em;
     background: @footerbg;
-    color: @footertextcolor   
+    color: @footertextcolor;
+    min-height: 23em;
+    font-family: @font-stack--open--sans;
 }
 
 .contentinfo__wrapper {
-        padding: 6em 1.5em 3.75em;    
+        padding: 4em 0;    
 }
 
 .contentinfo__section-title {
     .gamma ();
     color: @white; 
     text-transform: uppercase;
+    .visually-hidden();
 }
 
 .contentinfo__section-title a {
@@ -31,7 +34,13 @@
 
 .contentinfo p {
     margin-top: 1.84615384615385em;
-    .milli ();
+    font-size: 1em;
+    &.contactinfo__title{
+        font-weight: bold;
+    }
+    &.contactinfo__subtitle{
+        margin-top: 1.25em;
+    }
 }
 
 // Component in situ 
