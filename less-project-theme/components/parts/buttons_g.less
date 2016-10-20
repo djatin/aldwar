@@ -61,10 +61,10 @@ background-color : @btnbackgroundcolor;
     
     
 
-    &:visited {
+    /*&:visited {
         color: @white;
         opacity: 0.8;
-    }
+    }*/
     
 .lt-ie8 & {
     .has-layout();    
@@ -90,7 +90,16 @@ background-color : @btnbackgroundcolor;
     }
     
 }
-
+.d-section--style-media .btn--style-2 a{
+    color: @white;
+    border-color: @white;
+    &:hover {
+        border-color : @btnbackgroundcolor;
+    }
+    &:active, &:focus {
+        border-color: lighten(@btnbackgroundcolor, 1%);
+    }
+}
 
 //component in situe
 .o-splash__btn[class*='--style-2'] a {
