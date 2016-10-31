@@ -79,6 +79,27 @@
 //.d-section--alignment-left (media floated left)
 //.d-section--alignment-right (media floated right)
 
+.d-feed--style-1{
+    .o-tile{
+        margin-top: 1em;
+    }
+    .o-tile__icon{
+        .visually-hidden();
+    }
+    .o-tile__body, .o-btn{
+        border: none;
+        border-right: 1px solid #ccc;
+        margin-top: 0;
+    }
+    .o-tile + .o-tile .o-tile__body, .o-tile + .o-tile .o-btn{
+        border-right: none;
+    }
+    .o-tile__title{
+        max-width: 20em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 
 // SITE SPECIFIC TWEAKS =================================================== 
