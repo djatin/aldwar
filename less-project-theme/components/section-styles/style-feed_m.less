@@ -240,9 +240,6 @@
         &:first-child{
             margin-top: .25em;
         }
-        .min-width-max(40em{
-            margin-bottom: 1.5em;
-        }69em);
         .o-tile__item {
             .min-width(40em{
                 width: 25.25em;
@@ -285,6 +282,9 @@
             .o-tile__text {
                 max-width: 100%;
                 font-size: 1.25em;
+                .min-width-max(1em{
+                    font-size: 1em; 
+                }59.999em);
                 p{
                     margin-top: 0.5em;
                 }
@@ -293,8 +293,13 @@
         footer{
             border: none;
             margin-top: 0;
+            .min-width(75em{
+                padding: 0 5em;                
+            });
+            .min-width-max(40em{
+                padding: 0 1em;                
+            }74.999em);
             .min-width(40em{
-                padding: 0 5em;
                 float: right;
                 width: 100%;
                 max-width: 70%;
