@@ -32,6 +32,7 @@
     // 960px/60em
 	.min-width(60em; {
         width: 33.33333333333333%;
+        max-width: 33.33333333333333%;
     });
     
     
@@ -52,9 +53,9 @@
         flex-flow: row wrap;
         
           //so extras fall in the center
-        -ms-flex-pack: center;
+        /*-ms-flex-pack: center;
         -webkit-justify-content: center;
-        justify-content: center;
+        justify-content: center;*/
         
     });
     
@@ -236,10 +237,10 @@
         display: block;
         text-align: left;
         clear: both;
-        margin-bottom: .25em;
+        /*margin-bottom: .25em;
         &:first-child{
             margin-top: .25em;
-        }
+        }*/
         .o-tile__item {
             .min-width(40em{
                 width: 25.25em;
@@ -252,9 +253,9 @@
             .min-width(75em{
                 padding: 1.5em 5em;
             });
-            .min-width-max(40em{
+            /*.min-width-max(40em{
                 padding: 0 1em;
-            }74.99em);
+            }74.99em);*/
             .o-tile__title{
                 margin-top: 0;
                 font-weight: normal;
@@ -281,7 +282,7 @@
             }
             .o-tile__text {
                 max-width: 100%;
-                font-size: 1.25em;
+                //font-size: 1.25em;
                 .min-width-max(1em{
                     font-size: 1em; 
                 }59.999em);
@@ -297,7 +298,7 @@
                 padding: 0 5em;                
             });
             .min-width-max(40em{
-                padding: 0 1em;                
+                padding: 0 1.5em;                
             }74.999em);
             .min-width(40em{
                 float: right;

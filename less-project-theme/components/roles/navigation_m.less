@@ -32,10 +32,13 @@
     
 // navigation (role='navigation' -----------------------------
 .navigation {
-        width: 100%;
-        position: absolute;
-        top: 0;
-        z-index: @zindex-nav;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: @zindex-nav;
+    .logged-in &{
+        top: 6em;
+    }
 }
     
 .navigation__wrapper {
@@ -94,7 +97,7 @@
     
 .navigation__global-nav > .menu {
     //.one-half();
-    margin: 2em auto 0;    
+    margin: 2em auto 0; 
 }
     
 // utility navigation -------------------
