@@ -442,9 +442,11 @@ display : none; }
 
 // General form object holder
 .form-item {
-    margin-bottom: @gutter;
+    margin-bottom: 1em;
    //clear: both;
-    
+    .layout--everything-else &{
+        margin-bottom: 1em;
+    }
 }
 
 // rewrite system menu
@@ -483,6 +485,9 @@ form .description {
     margin: 0;
 }
 
+.layout--everything-else #edit-actions{
+    margin-bottom: 3%;
+}
 
 /* Dupal FORMS & WEBFORMS LAYOUTS ------------------------------------------- */
 
